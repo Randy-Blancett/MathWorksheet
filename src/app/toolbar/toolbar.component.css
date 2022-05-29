@@ -1,0 +1,19 @@
+div{
+    background-color: black;
+    padding: 2.5px;
+    height: 25px;
+    color: greenyellow;
+    display: inline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100% !important;
+}
+
+div.button{
+    padding: 2.5px;
+    height:20px !important;
+    cursor: pointer;
+    position: relative;
+}
