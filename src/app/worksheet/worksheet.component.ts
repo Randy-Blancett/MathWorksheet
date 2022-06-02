@@ -8,16 +8,20 @@ import {Problem} from '../problem'
 })
 export class WorksheetComponent implements OnInit {
   title = "Worksheet Page"
+ 
   rows = [
-    [
+      new Problem(),
+      new Problem(),
+      new Problem(),
+      new Problem(),
+      new Problem(),
+      new Problem(),
+      new Problem(),
+      new Problem(),
+      new Problem(),
       new Problem(),
       new Problem(),
       new Problem()
-    ], [
-      new Problem(),
-      new Problem(),
-      new Problem()
-    ]
   ]
   constructor() { }
 

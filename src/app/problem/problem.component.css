@@ -1,3 +1,21 @@
-div{
+@media screen {
+    :host {
+        font-size: 72px;
+    }
+}
+
+@media print {
+    :host {
+        font-size: 50px;
+    }
+}
+
+div {
     display: inline;
+}
+
+div.number {}
+
+div[name="answer"] {
+    border: greenyellow solid;
 }

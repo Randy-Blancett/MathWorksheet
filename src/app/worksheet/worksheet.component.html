@@ -1,4 +1,1 @@
-<table>
-    <tr *ngFor="let row of rows" >
-        <td *ngFor="let problem of row"><app-problem></app-problem></td></tr>
-</table>
+<app-problem *ngFor="let problem of rows" [number1]=5 [number2]=6 op="+"></app-problem>

@@ -1,9 +1,20 @@
-div{
+@media print {
+    div {
+        display: none;
+    }
+}
+
+@media screen {
+    div {
+        height: 25px;
+        display: inline;
+    }
+}
+
+div {
     background-color: black;
     padding: 2.5px;
-    height: 25px;
     color: greenyellow;
-    display: inline;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,9 +22,9 @@ div{
     width: 100% !important;
 }
 
-div.button{
+div.button {
     padding: 2.5px;
-    height:20px !important;
+    height: 20px !important;
     cursor: pointer;
     position: relative;
 }
