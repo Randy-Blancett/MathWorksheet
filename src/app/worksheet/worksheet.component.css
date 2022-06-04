@@ -11,6 +11,13 @@
     align-items: center;
 }
 
+
+@media print {
+    :host {
+        color: black;
+    }
+}
+
 div.row{
     display: flex;
     justify-content: space-around;

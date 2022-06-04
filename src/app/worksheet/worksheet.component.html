@@ -1,1 +1,1 @@
-<app-problem *ngFor="let problem of rows" [number1]=5 [number2]=6 op="+"></app-problem>
+<app-problem *ngFor="let problem of rows" [number1]=problem.getNumber1() [number2]=problem.getNumber2() op="+"></app-problem>
