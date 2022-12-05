@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "MathWorksheet"
+  "defaultProject": "MathWorksheet",
+  "cli": {
+    "analytics": "74c5af5e-d2cf-46b6-9109-8b23a90a46f7"
+  }
 }

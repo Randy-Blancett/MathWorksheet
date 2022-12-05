@@ -1,1 +1,21 @@
-<p>settings works!</p>
+<p>Math Worksheet Settings</p>
+
+<div>
+  <label for="ProblemsPerPage">Problems Per Page: </label>
+  <input id="ProblemsPerPage" [(ngModel)]="settings.ProblemsPerPage" type="number" (ngModelChange)="storeSettings()"
+    placeholder="0">
+</div>
+<div>
+  <label>Answers Must be between </label>
+  <input id="MinAnswer" [(ngModel)]="settings.MinAnswer" type="number" (ngModelChange)="storeSettings()"
+    placeholder="0">
+  and
+  <input id="MaxAnswer" [(ngModel)]="settings.MaxAnswer" type="number" (ngModelChange)="storeSettings()"
+    placeholder="0">
+</div>
+<div>
+  <ul>
+    <li><input [(ngModel)]="showAdd" type="checkbox" (ngModelChange)="storeSettings()" /><label> Addition</label> </li>
+    <li><input [(ngModel)]="showSub" type="checkbox" (ngModelChange)="storeSettings()" /><label> Subtraction</label> </li>
+  </ul>
+</div>
