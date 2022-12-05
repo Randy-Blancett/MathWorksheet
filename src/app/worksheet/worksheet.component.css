@@ -1,0 +1,24 @@
+:host {
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:33% 33% auto;
+    grid-template-rows:25% 25% 25% 25%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media print {
+    :host {
+        color: black;
+    }
+}
+
+div.row{
+    display: flex;
+    justify-content: space-around;
+}

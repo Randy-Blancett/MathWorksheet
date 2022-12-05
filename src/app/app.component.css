@@ -1,0 +1,28 @@
+:host {
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+@media print {
+    div#content {
+        top: 0px;
+    }
+}
+
+@media screen {
+    div#content {
+        top: 25px;
+    }
+}
+
+div#content {
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    padding-top: 5px;
+    display: flex;
+    background-color: black;
+    color: greenyellow;
+    overflow: hidden;
+}

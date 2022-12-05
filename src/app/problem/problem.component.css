@@ -1,0 +1,35 @@
+@media screen {
+    :host {
+        font-size: 72px;
+    }
+
+    div[name="answer"] {
+        border: greenyellow;
+    }
+}
+
+@media print {
+    :host {
+        font-size: 50px;
+    }
+
+    div[name="answer"] {
+        border: black 
+    }
+    div[name="answer"] span{
+        display: none; 
+    }
+}
+
+div[name="answer"] {
+    border: solid;
+    display: inline-flex;
+    min-width: 100px;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: inline;
+}
