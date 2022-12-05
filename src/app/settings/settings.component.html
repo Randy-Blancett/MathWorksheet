@@ -15,7 +15,9 @@
 </div>
 <div>
   <ul>
-    <li><input [(ngModel)]="showAdd" type="checkbox" (ngModelChange)="storeSettings()" /><label> Addition</label> </li>
-    <li><input [(ngModel)]="showSub" type="checkbox" (ngModelChange)="storeSettings()" /><label> Subtraction</label> </li>
+    <li><input [(ngModel)]="settings.Operations.Add" type="checkbox" (ngModelChange)="storeSettings()" /><label> Addition</label> </li>
+    <li><input [(ngModel)]="settings.Operations.Subtract" type="checkbox" (ngModelChange)="storeSettings()" /><label> Subtraction</label> </li>
+    <li><input [(ngModel)]="settings.Operations.Multiply" type="checkbox" (ngModelChange)="storeSettings()" /><label> Multiply</label> </li>
+    <li><input [(ngModel)]="settings.Operations.Divide" type="checkbox" (ngModelChange)="storeSettings()" /><label> Divide</label> </li>
   </ul>
 </div>

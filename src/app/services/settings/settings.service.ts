@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Operation } from 'src/app/problem';
 import { Settings } from './settings';
 @Injectable({
   providedIn: 'root'
@@ -12,7 +11,7 @@ export class SettingsService {
     let data = localStorage.getItem("MathWorksheet_Settings");
     if (data == null)
       return {
-        ProblemsPerPage: 12, MaxAnswer: 10, MinAnswer: 1,Operations: new Set([Operation.ADD,Operation.SUBTRACT])
+        ProblemsPerPage: 12, MaxAnswer: 10, MinAnswer: 1,Operations: {Add:true,Subtract:true,Multiply:false,Divide: false}
       };
     return JSON.parse(data);
   }
